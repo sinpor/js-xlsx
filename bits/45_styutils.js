@@ -64,6 +64,11 @@ function find_mdw(collw, coll) {
 	}
 }
 
+/* 像素与磅转换 */
+var DEF_PPI = 96, PPI = DEF_PPI;
+function px2pt(px) { return px * 96 / PPI; }
+function pt2px(pt) { return pt * PPI / 96; }
+
 /* [MS-EXSPXML3] 2.4.54 ST_enmPattern */
 var XLMLPatternTypeMap = {
 	"None": "none",
